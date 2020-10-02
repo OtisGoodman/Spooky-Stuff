@@ -1,0 +1,37 @@
+modLoader="javafml"
+loaderVersion="[34,)"
+issueTrackerURL=""
+license="GNU"
+
+[[mods]]
+modId="spookyStuff"
+updateJSONURL=""
+version="${version}"
+displayName="Spooky Stuff"
+displayURL="https://github.com/OtisGoodman/Spooky-Stuff"
+credits="Darkhax for the making spookyjam contest."
+authors="Otis_Goodman"
+description='''
+Spooky Stuff is an entry for MMD's Spooky Jam 2020, which adds MISC fall/spooky items and blocks.
+'''
+
+[[dependencies.spookyStuff]]
+    modId="forge"
+    mandatory=true
+    versionRange="[34,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.spookyStuff]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.3]"
+    ordering="NONE"
+    side="BOTH"
+	
+[[dependencies.spookyStuff]]
+    modId="bookshelf"
+    mandatory=true
+    versionRange="[8,)"
+    ordering="AFTER"
+    side="BOTH"
