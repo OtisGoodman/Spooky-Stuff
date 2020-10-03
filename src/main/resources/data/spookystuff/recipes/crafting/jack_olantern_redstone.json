@@ -1,0 +1,15 @@
+{
+  "type": "crafting_shapeless",
+ "ingredients": [
+        {
+            "item": "minecraft:redstone_torch"
+        },
+        {
+            "item": "minecraft:carved_pumpkin"
+        }
+    ],
+  "result": {
+    "item": "spookystuff:jack_o_lantern_redstone",
+    "count": 1
+  }
+}
