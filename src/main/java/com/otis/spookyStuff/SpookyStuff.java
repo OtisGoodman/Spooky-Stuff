@@ -1,6 +1,5 @@
 package com.otis.spookyStuff;
 
-import javax.swing.text.AbstractDocument.Content;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -26,7 +25,7 @@ public class SpookyStuff {
     public static final Logger LOG = LogManager.getLogger(MOD_NAME);
     
     
-    public static final ItemGroup ITEM_GROUP = new ItemGroupBase(MOD_ID, () -> new ItemStack(Items.JACK_O_LANTERN));
+    public static final ItemGroup ITEM_GROUP = new ItemGroupBase(MOD_ID, () -> new ItemStack(SpookyStuff.content.jack_o_lantern_soul));
     
     public static final NetworkHelper NETWORK = new NetworkHelper(new ResourceLocation(MOD_ID, "main"), "4.0.X");
     
@@ -36,7 +35,9 @@ public class SpookyStuff {
     
     public SpookyStuff() {
         
-        registry = new RegistryHelper(MOD_ID, LOG).withItemGroup(ITEM_GROUP);
-        registry.initialize(FMLJavaModLoadingContext.get().getModEventBus());
+    	   registry = new RegistryHelper(MOD_ID, LOG).withItemGroup(ITEM_GROUP);
+           content = DistExecutor.unsafeRunForDist( () -> () -> new ContentClient(registry), () -> () -> new Content(registry));
+           registry.initialize(FMLJavaModLoadingContext.get().getModEventBus());
     }
+   
 }
