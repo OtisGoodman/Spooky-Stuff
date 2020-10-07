@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/orientable",
-  "textures": {
-    "top": "minecraft:block/pumpkin_top",
-    "front": "spookystuff:block/jack_o_lantern_soul",
-    "side": "minecraft:block/pumpkin_side"
-  }
-}

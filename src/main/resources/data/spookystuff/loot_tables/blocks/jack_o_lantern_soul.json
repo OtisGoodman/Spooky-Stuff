@@ -1,1 +1,0 @@
-{"type":"minecraft:block","pools":[{"rolls":1,"entries":[{"type":"minecraft:item","name":"spookystuff:jack_o_lantern_soul"}],"conditions":[{"condition":"minecraft:survives_explosion"}]}]}
