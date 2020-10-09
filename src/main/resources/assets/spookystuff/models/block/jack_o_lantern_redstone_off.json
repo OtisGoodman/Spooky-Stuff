@@ -2,7 +2,7 @@
   "parent": "minecraft:block/orientable",
   "textures": {
     "top": "spookystuff:block/pumpkin_top_redstone",
-    "front": "minecraft:block/jack_o_lantern",
+    "front": "minecraft:block/carved_pumpkin",
     "side": "minecraft:block/pumpkin_side"
   }
 } 

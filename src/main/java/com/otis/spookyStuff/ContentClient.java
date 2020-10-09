@@ -35,8 +35,10 @@ public class ContentClient extends Content {
             final ResourceLocation id = stack.getItem().getRegistryName();
             
             if (id != null && "spookystuff".equals(id.getNamespace())) {
-                
-                event.getToolTip().add(new TranslationTextComponent("tooltip.spookystuff." + id.getPath()).mergeStyle(TextFormatting.GRAY));
+                if ("spooky_guide".equals(stack.getItem().getRegistryName().getPath())){
+                    event.getToolTip().add(new TranslationTextComponent("tooltip.spookystuff." + id.getPath()).mergeStyle(TextFormatting.GRAY));
+
+                }
             }
         }
     }

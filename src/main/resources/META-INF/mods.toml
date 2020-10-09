@@ -5,11 +5,11 @@ license="GNU"
 
 [[mods]]
 modId="spookystuff"
-updateJSONURL="https://github.com/OtisGoodman/Spooky-Stuff"
+updateJSONURL="https://github.com/OtisGoodman/Spooky-Stuff/update.json"
 version="${version}"
 displayName="Spooky Stuff"
 displayURL="https://github.com/OtisGoodman/Spooky-Stuff"
-credits="Darkhax for the making spookyjam contest."
+credits="DinoSoup my amazing texture dude and Darkhax for the making spookyjam contest."
 authors="Otis_Goodman"
 description='''
 Spooky Stuff is an entry for MMD's Spooky Jam 2020, which adds MISC fall/spooky items and blocks.

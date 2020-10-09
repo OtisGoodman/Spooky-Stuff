@@ -4,8 +4,8 @@
 
 # Spooky Stuff
 
-#### By [Otis_Goodman](https://github.com/OtisGoodman/)
-
+#### Code by [Otis_Goodman](https://github.com/OtisGoodman/)
+##### Art by DinoSoup
 ![Maintained](https://img.shields.io/badge/Maintained%3A-Indev-purple?style=flat-square&logo=github)
 
 ![Java CI with Gradle](https://github.com/OtisGoodman/Spooky-Stuff/workflows/Java%20CI%20with%20Gradle/badge.svg?branch=main&event=push)

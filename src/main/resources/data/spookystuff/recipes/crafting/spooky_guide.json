@@ -1,0 +1,15 @@
+{
+  "type": "crafting_shapeless",
+ "ingredients": [
+        {
+            "item": "minecraft:book"
+        },
+        {
+            "item": "minecraft:carved_pumpkin"
+        }
+    ],
+  "result": {
+    "item": "spookystuff:spookyguide",
+    "count": 1
+  }
+}

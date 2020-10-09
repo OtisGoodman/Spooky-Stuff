@@ -5,6 +5,7 @@ import java.util.function.Supplier;
 import com.mojang.datafixers.types.Type;
 
 import com.otis.spookyStuff.fetures.RedstonePumpkin;
+import com.otis.spookyStuff.fetures.SpookyGuide;
 import net.darkhax.bookshelf.registry.RegistryHelper;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
@@ -22,6 +23,7 @@ public class Content {
     public final Block jack_o_lantern_soul;
     public final Item dried_pumpkin_seeds;
     public final Block jack_o_lantern_redstone;
+    public final Item spooky_guide;
 
 
     public Content(RegistryHelper registry) {
@@ -35,6 +37,7 @@ public class Content {
 
 		 Food.Builder dried_pumpkin_seedsBuilder = new Food.Builder().fastToEat().hunger(3).saturation(0.06f);
 		this.dried_pumpkin_seeds = registry.items.register(new Item(new Item.Properties().food(dried_pumpkin_seedsBuilder.build())),"dried_pumpkin_seeds");
+        this.spooky_guide = registry.items.register(new SpookyGuide(new Item.Properties().maxStackSize(1)),"spooky_guide");
 
     }
     
