@@ -16,25 +16,15 @@ public class Util {
             return state.get(BlockStateProperties.LIT) ? lightValue : 0;
         };
     }
-    public static void openWebpage(String urlString) {
-        String url = "https://otisgoodman.github.io/Spooky-Stuff/wiki";
-
-        if(Desktop.isDesktopSupported()){
-            Desktop desktop = Desktop.getDesktop();
-            try {
+    public static void openWebPage(String url) {
+        try {
+            Desktop desktop = Desktop.isDesktopSupported() ? Desktop.getDesktop() : null;
+            if (desktop != null && desktop.isSupported(Desktop.Action.BROWSE)) {
                 desktop.browse(new URI(url));
-            } catch (IOException | URISyntaxException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
             }
-        }else{
-            Runtime runtime = Runtime.getRuntime();
-            try {
-                runtime.exec("xdg-open " + url);
-            } catch (IOException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
+            throw new NullPointerException();
+        } catch (Exception e) {
+            SpookyStuff.LOG.error(e.getMessage());
         }
     }
     }

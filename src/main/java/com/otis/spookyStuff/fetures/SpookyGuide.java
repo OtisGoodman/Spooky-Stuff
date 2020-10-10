@@ -2,6 +2,8 @@ package com.otis.spookyStuff.fetures;
 
 import com.otis.spookyStuff.SpookyStuff;
 import com.otis.spookyStuff.Util;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.screen.ConfirmOpenLinkScreen;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -17,11 +19,13 @@ public class SpookyGuide extends Item{
         super(properties);
     }
     private void openDocs(PlayerEntity playerIn){
-        Util.openWebpage("https://otisgoodman.github.io/Spooky-Stuff/wiki");
+        net.minecraft.util.Util.getOSType().openURI("https://otisgoodman.github.io/Spooky-Stuff/");
         final ITextComponent component = TextComponentUtils.wrapWithSquareBrackets(new StringTextComponent("A pumpkin has opened the spooky stuff website for you!").modifyStyle( (style) -> {
             return style.setFormatting(TextFormatting.DARK_PURPLE);
         }));
+        playerIn.sendStatusMessage(component,true);
         }
+
     @Override
     public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
         if (handIn.equals(Hand.MAIN_HAND)) {
