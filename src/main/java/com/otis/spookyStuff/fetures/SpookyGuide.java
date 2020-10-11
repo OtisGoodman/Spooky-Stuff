@@ -19,8 +19,9 @@ public class SpookyGuide extends Item{
         super(properties);
     }
     private void openDocs(PlayerEntity playerIn){
+        playerIn.getCooldownTracker().setCooldown(this,50);
         net.minecraft.util.Util.getOSType().openURI("https://otisgoodman.github.io/Spooky-Stuff/");
-        final ITextComponent component = TextComponentUtils.wrapWithSquareBrackets(new StringTextComponent("A pumpkin has opened the spooky stuff website for you!").modifyStyle( (style) -> {
+        final ITextComponent component = TextComponentUtils.toTextComponent(new StringTextComponent("A pumpkin has opened the spooky stuff website for you!").modifyStyle( (style) -> {
             return style.setFormatting(TextFormatting.DARK_PURPLE);
         }));
         playerIn.sendStatusMessage(component,true);
