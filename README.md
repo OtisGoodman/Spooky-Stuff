@@ -1,5 +1,5 @@
 <p align="center"> 
-<img src="https://raw.githubusercontent.com/OtisGoodman/Spooky-Stuff/.github/img/banner.png">
+<img src="https://raw.githubusercontent.com/OtisGoodman/Spooky-Stuff/main/.github/img/banner.png">
 </p>
 
 # Spooky Stuff
