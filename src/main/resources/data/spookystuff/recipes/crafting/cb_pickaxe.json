@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    " S ",
+    " S "
+  ],
+  "key": {
+    "B": {
+      "item": "spookystuff:cb_shard"
+    },
+    "S": {
+      "item": "minecraft:bone"
+    }
+  },
+  "result": {
+    "item": "spookystuff:cb_pickaxe",
+    "count": 1
+  }
+}

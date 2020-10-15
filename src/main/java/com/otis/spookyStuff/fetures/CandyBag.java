@@ -41,8 +41,7 @@ public class CandyBag extends Item {
             case 7: ret = new ItemStack(Items.APPLE); break;
             case 8: ret = new ItemStack(Items.CLAY_BALL).setDisplayName(component); break;
             case 9: ret = new ItemStack(SpookyStuff.content.dried_pumpkin_seeds); break;
-
-
+            case 10: ret = new ItemStack(SpookyStuff.content.cb_shard); break;
         }
         return ret;
     }
@@ -60,7 +59,7 @@ public class CandyBag extends Item {
         Random rand = new Random();
         Integer count = rand.nextInt(4-1) + 1;
         for (int i = count; i > 0; i--) {
-            Integer candyType = rand.nextInt(9);
+            Integer candyType = rand.nextInt(11);
             player.addItemStackToInventory(getCandyFromInt(candyType));
             player.playSound(getSoundFromInt(rand.nextInt(2)),1f,1.2f);
         }

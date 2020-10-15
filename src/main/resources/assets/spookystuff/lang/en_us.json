@@ -7,11 +7,16 @@
  "tooltip.spookystuff.spooky_guide": "Your Guide to Spooky Stuff!",
  "item.spookystuff.candy_bag": "Candy Bag",
  "tooltip.spookystuff.candy_bag": "What could be inside?",
+
  "item.spookystuff.candy_w0": "Candy",
  "item.spookystuff.candy_w1": "Candy",
  "item.spookystuff.candy_w2": "Candy",
  "item.spookystuff.candy_s0": "Candy",
  "item.spookystuff.candy_s1": "Candy",
  "item.spookystuff.candy_c0": "Candy",
- "item.spookystuff.candy_c1": "Candy"
+ "item.spookystuff.candy_c1": "Candy",
+
+ "item.spookystuff.cb_shard": "Cursed Shard",
+ "item.spookystuff.cb_pickaxe": "Cursed Bone Pickaxe",
+ "item.spookystuff.cb_shovel": "Cursed Bone Shovel"
 }

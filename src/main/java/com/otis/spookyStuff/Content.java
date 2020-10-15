@@ -11,9 +11,7 @@ import net.darkhax.bookshelf.registry.RegistryHelper;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
-import net.minecraft.item.Food;
-import net.minecraft.item.Foods;
-import net.minecraft.item.Item;
+import net.minecraft.item.*;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
 import net.minecraft.tileentity.TileEntity;
@@ -37,12 +35,19 @@ public class Content {
     public final Item dried_pumpkin_seeds;
     public final Item candy_bag;
 
+    public final Item cb_shard;
+    public final Item cb_pickaxe;
+    public final Item cb_shovel;
+
     public Content(RegistryHelper registry) {
 		this.jack_o_lantern_soul = registry.blocks.register(new CarvedPumpkinBlock(AbstractBlock.Properties.create(Material.GOURD, MaterialColor.ADOBE).hardnessAndResistance(1.0F).sound(SoundType.WOOD).setLightLevel((state) -> {
 		      return 15;
 		   })), "jack_o_lantern_soul");
         this.jack_o_lantern_redstone = registry.blocks.register(new RedstonePumpkin(AbstractBlock.Properties.create(Material.GOURD, MaterialColor.ADOBE).hardnessAndResistance(1.0F).sound(SoundType.WOOD).setLightLevel(com.otis.spookyStuff.Util.getLightValueLit(15))), "jack_o_lantern_redstone");
 
+        this.cb_shard = registry.items.register(new SimpleFoiledItem(new Item.Properties().maxStackSize(16)),"cb_shard");
+        this.cb_pickaxe = registry.items.register(new PickaxeItem(com.otis.spookyStuff.Util.cursedBone.CURSED_BONE,1,-2.8f, new Item.Properties()),"cb_pickaxe");
+        this.cb_shovel = registry.items.register(new ShovelItem(com.otis.spookyStuff.Util.cursedBone.CURSED_BONE,1.5f,-3.0f, new Item.Properties()),"cb_shovel");
 
         this.spooky_guide = registry.items.register(new SpookyGuide(new Item.Properties().maxStackSize(1)),"spooky_guide");
         this.candy_bag = registry.items.register(new CandyBag(new Item.Properties().maxStackSize(1)),"candy_bag");
