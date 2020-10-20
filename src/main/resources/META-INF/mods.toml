@@ -5,7 +5,7 @@ license="GNU"
 
 [[mods]]
 modId="spookystuff"
-updateJSONURL="https://github.com/OtisGoodman/Spooky-Stuff/update.json"
+updateJSONURL="https://raw.githubusercontent.com/OtisGoodman/Spooky-Stuff/main/updates.json"
 version="${version}"
 displayName="Spooky Stuff"
 displayURL="https://github.com/OtisGoodman/Spooky-Stuff"
