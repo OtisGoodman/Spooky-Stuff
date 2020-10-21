@@ -1,6 +1,7 @@
 <p align="center"> 
 <img src="https://raw.githubusercontent.com/OtisGoodman/Spooky-Stuff/main/.github/img/banner.png">
 </p>
+
 # WARNING THIS CODE IS INCOMPLTE 
 
 # Spooky Stuff
